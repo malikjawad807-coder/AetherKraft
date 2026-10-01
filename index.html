@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AETHER KRAFT — A Digital Studio by Jawad</title>
-  <meta name="description" content="AETHER KRAFT is a premium digital studio founded by Jawad. We engineer high-performance, customized websites starting from $500. Tailored, responsive, and crafted around your brand.">
-  <meta name="keywords" content="AETHER KRAFT, Jawad, Customized Website Development, Digital Studio, Web Developer Kashmir, High-Performance Websites, Custom Web Design">
+  <title>AETHERKRAFT — A Digital Studio by Jawad</title>
+  <meta name="description" content="Official personal portfolio of Jawad — AETHERKRAFT. High-performance, cinematic, and responsive customized web architectures designed from scratch.">
+  <meta name="keywords" content="Jawad, AETHERKRAFT, Creative Developer, Customized Website Development, Frontend Engineer, Web Design, Portfolio">
   <meta name="author" content="Jawad">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://aetherkraft.dev/">
-  <meta property="og:title" content="AETHER KRAFT — A Digital Studio by Jawad">
-  <meta property="og:description" content="Customized website development starting from $500. Every website is designed and developed around your goals, brand, and audience.">
+  <meta property="og:url" content="https://aetherkraft.com/">
+  <meta property="og:title" content="AETHERKRAFT — A Digital Studio by Jawad">
+  <meta property="og:description" content="High-performance, cinematic, and responsive customized web experiences designed from scratch.">
   <meta property="og:image" content="ezgif-frame-001.jpg">
 
-  <!-- Twitter Meta -->
+  <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="AETHER KRAFT — A Digital Studio by Jawad">
-  <meta property="twitter:description" content="Customized website development starting from $500. Designed and developed around your goals, brand, and audience.">
+  <meta property="twitter:title" content="AETHERKRAFT — A Digital Studio by Jawad">
+  <meta property="twitter:description" content="High-performance, cinematic, and responsive customized web experiences designed from scratch.">
   <meta property="twitter:image" content="ezgif-frame-001.jpg">
 
-  <!-- Favicon -->
+  <!-- Favicon: Cosmic Fire Eclipse Emblem -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23000000'/><circle cx='50' cy='50' r='40' fill='none' stroke='%23FF4500' stroke-width='6'/><circle cx='46' cy='46' r='34' fill='%23000000'/></svg>">
 
   <!-- Preload Critical Hero Frame -->
@@ -30,75 +30,70 @@
   <!-- Google Fonts: Plus Jakarta Sans, Outfit, Syne, JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- GSAP & ScrollTrigger for High-Performance Pinning & Smooth Transitions -->
+  <!-- GSAP & ScrollTrigger for High-Performance Pinning & Smooth Scrubbing -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-void text-light">
+<body class="theme-void-fire">
 
-  <!-- Solar Eclipse Corona / Cosmic Fire Ambient Glows -->
-  <div class="eclipse-glow glow-top-right" aria-hidden="true"></div>
-  <div class="eclipse-glow glow-hero-center" aria-hidden="true"></div>
-  <div class="eclipse-glow glow-bottom-left" aria-hidden="true"></div>
+  <!-- ACCESSIBILITY SKIP LINK -->
+  <a href="#main-content" class="skip-to-content">Skip to primary content</a>
 
-  <!-- Cosmic Particle Dust -->
-  <div class="cosmic-dust-overlay" aria-hidden="true"></div>
+  <!-- DUAL-LAYER CURSOR ORB FOLLOWER (Desktop only) -->
+  <div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
+  <div id="cursor-dot" class="cursor-dot" aria-hidden="true"></div>
 
-  <!-- TOP HEADER NAVIGATION -->
-  <header id="site-header" class="site-header">
+  <!-- =========================================================================
+       HEADER & NAVIGATION
+       ========================================================================= -->
+  <header id="main-header" class="site-header">
     <div class="header-container">
       
       <!-- Brand Logo -->
-      <a href="#hero" class="brand-link" aria-label="AETHER KRAFT Home">
-        <div class="brand-symbol-wrap">
+      <a href="#hero" class="brand-logo" aria-label="AETHERKRAFT Home">
+        <div class="brand-symbol">
           <span class="eclipse-ring"></span>
           <span class="eclipse-core"></span>
         </div>
-        <div class="brand-text-group">
-          <span class="brand-name">AETHER KRAFT</span>
-          <span class="brand-tagline">A DIGITAL STUDIO BY JAWAD</span>
+        <div class="brand-text-wrap">
+          <span class="brand-name">AETHERKRAFT</span>
         </div>
       </a>
 
-      <!-- Desktop Nav -->
+      <!-- Desktop Nav (Note: NO prices in link titles!) -->
       <nav class="desktop-nav" aria-label="Primary Navigation">
         <ul class="nav-links">
           <li><a href="#hero" class="nav-item">Intro</a></li>
           <li><a href="#about-view" class="nav-item">About</a></li>
-          <li><a href="#odyssey" class="nav-item">Visual Journey</a></li>
-          <li><a href="#services" class="nav-item">Services &amp; Pricing</a></li>
-          <li><a href="#portfolio" class="nav-item">Works</a></li>
-          <li><a href="#journey" class="nav-item">Timeline</a></li>
+          <li><a href="#showcase" class="nav-item">Visual Journey</a></li>
+          <li><a href="#projects" class="nav-item">Works</a></li>
+          <li><a href="#experience" class="nav-item">Journey</a></li>
+          <li><a href="#skills" class="nav-item">Offerings</a></li>
+          <li><a href="#pricing" class="nav-item">Pricing</a></li>
           <li><a href="#contact" class="nav-item">Contact</a></li>
         </ul>
       </nav>
 
-      <!-- Header Action Buttons -->
+      <!-- Action Group -->
       <div class="header-actions">
-        <!-- WhatsApp Quick Link -->
-        <a href="https://wa.me/923709315445" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-mini" aria-label="Message Jawad on WhatsApp">
+        <a href="https://wa.me/923709315445" target="_blank" rel="noopener noreferrer" class="btn-header-wa">
           <i class="fa-brands fa-whatsapp"></i>
-          <span class="wa-text">WhatsApp</span>
+          <span>Let's Talk</span>
         </a>
 
-        <!-- Contact CTA -->
-        <a href="#contact" class="btn-fire-header">
-          <span>Start Project</span>
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
-
-        <!-- Mobile Menu Toggle Button -->
-        <button id="mobile-toggle-btn" class="mobile-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+        <!-- Mobile Drawer Toggle -->
+        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
           <span class="bar bar-1"></span>
           <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
         </button>
       </div>
 
@@ -109,41 +104,33 @@
       <ul class="mobile-nav-list">
         <li><a href="#hero" class="mobile-nav-link">Intro</a></li>
         <li><a href="#about-view" class="mobile-nav-link">About</a></li>
-        <li><a href="#odyssey" class="mobile-nav-link">Visual Journey</a></li>
-        <li><a href="#services" class="mobile-nav-link">Services &amp; Pricing</a></li>
-        <li><a href="#portfolio" class="mobile-nav-link">Works</a></li>
-        <li><a href="#journey" class="mobile-nav-link">Timeline</a></li>
+        <li><a href="#showcase" class="mobile-nav-link">Visual Journey</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Works</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Journey</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Offerings</a></li>
+        <li><a href="#pricing" class="mobile-nav-link">Pricing</a></li>
         <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
       </ul>
       <div class="mobile-drawer-footer">
-        <a href="https://wa.me/923709315445" target="_blank" rel="noopener noreferrer" class="mobile-wa-btn">
+        <a href="https://wa.me/923709315445" target="_blank" rel="noopener noreferrer" class="btn-fire-primary w-full text-center">
           <i class="fa-brands fa-whatsapp"></i>
-          <span>Direct WhatsApp</span>
+          <span>Message on WhatsApp</span>
         </a>
-        <p class="drawer-location"><i class="fa-solid fa-location-dot"></i> MUZAFFARABAD, KASHMIR</p>
       </div>
     </div>
   </header>
 
-  <!-- Left Side Floating Quick Coordinates -->
-  <aside class="side-coordinates" aria-label="Location and WhatsApp">
-    <div class="coord-item">
-      <i class="fa-solid fa-location-dot"></i>
-      <span>MUZAFFARABAD, KASHMIR</span>
-    </div>
-    <div class="coord-divider"></div>
-    <a href="https://wa.me/923709315445" target="_blank" rel="noopener noreferrer" class="coord-link" aria-label="WhatsApp Contact">
-      <i class="fa-brands fa-whatsapp"></i>
-      <span>+92 370 9315445</span>
-    </a>
-  </aside>
 
+  <!-- =========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================= -->
   <main id="main-content">
 
     <!-- =========================================================================
          SECTION 1: PINNED HERO & ABOUT SCROLL-DRIVEN SEQUENCE
          Pins for 250vh: As visitor scrolls, the camera zooms out through Jawad's
          photography (Frame 1 to 240) with zero lag, while text cross-fades smoothly!
+         (NO pricing here, NO address here!)
          ========================================================================= -->
     <section id="hero" class="scroll-sequence-section">
       <div class="sequence-sticky-stage">
@@ -155,238 +142,124 @@
             <!-- STAGE 1: HERO VIEW -->
             <div id="hero-stage-view" class="text-stage-panel active">
               
-              <!-- Badge requested by user: exactly "A DIGITAL STUDIO BY JAWAD" -->
+              <!-- Badge requested by user: exactly "A DIGITAL STUDIO BY JAWAD" (NO address!) -->
               <div class="studio-badge">
                 <span class="badge-fire-dot"></span>
                 <span class="badge-text">A DIGITAL STUDIO BY JAWAD</span>
               </div>
 
               <h1 class="hero-title">
-                <span class="title-brand">AETHER KRAFT</span>
+                <span class="title-brand">AETHERKRAFT</span>
                 <span class="title-sub">Customized Website Development</span>
               </h1>
+
+              <div class="role-rotator-wrapper">
+                <span class="rotator-prefix">Crafting as </span>
+                <span id="role-rotator" class="rotator-dynamic">Creative Developer</span>
+              </div>
 
               <p class="hero-description">
                 We build high-performance, cinematic, and responsive websites designed from scratch. No cookie-cutter templates. Every website is engineered around your goals, your brand, and your audience.
               </p>
 
-              <!-- Transparent Starting Price Highlight -->
-              <div class="hero-pricing-pill">
-                <div class="pricing-tag-icon"><i class="fa-solid fa-fire"></i></div>
-                <div class="pricing-tag-text">
-                  <strong>Customized websites starting from $500</strong>
-                  <span>Tailored architectures &bull; Performance-focused &bull; Mobile-first</span>
+              <!-- Hero Action Buttons (NO pricing pills here!) -->
+              <div class="hero-actions-row">
+                <a href="#projects" class="btn-fire-primary">
+                  <span>Explore Selected Works</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="https://wa.me/923709315445" target="_blank" rel="noopener noreferrer" class="btn-fire-ghost">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <span>Let's Talk</span>
+                </a>
+              </div>
+
+              <!-- Quick Feature Badges -->
+              <div class="hero-feature-tags">
+                <span class="feature-tag"><i class="fa-solid fa-bolt"></i> 60+ FPS Fluid Motion</span>
+                <span class="feature-tag"><i class="fa-solid fa-code"></i> Clean Handcrafted Code</span>
+                <span class="feature-tag"><i class="fa-solid fa-mobile-screen"></i> Mobile-First Architecture</span>
+              </div>
+
+            </div>
+
+            <!-- STAGE 2: ABOUT STUDIO VIEW -->
+            <div id="about-stage-view" class="text-stage-panel">
+              
+              <div class="studio-badge" id="about-view">
+                <span class="badge-fire-dot"></span>
+                <span class="badge-text">CREATIVE PHILOSOPHY</span>
+              </div>
+
+              <h2 class="about-stage-title">
+                Bridging Creative Vision &amp; <span class="text-fire-gradient">Technical Precision</span>
+              </h2>
+
+              <p class="about-stage-desc">
+                I am Jawad, a creative developer and digital craftsman specializing in tailored web experiences. I combine cutting-edge frontend engineering with cinematic visual design to deliver websites that don't just exist—they captivate and convert.
+              </p>
+
+              <div class="about-metrics-grid">
+                <div class="metric-card">
+                  <span class="metric-value">100%</span>
+                  <span class="metric-label">Custom Built</span>
+                  <span class="metric-sub">Zero templates</span>
+                </div>
+                <div class="metric-card">
+                  <span class="metric-value">60+</span>
+                  <span class="metric-label">FPS Motion</span>
+                  <span class="metric-sub">Hardware accelerated</span>
+                </div>
+                <div class="metric-card">
+                  <span class="metric-value">Global</span>
+                  <span class="metric-label">Client Reach</span>
+                  <span class="metric-sub">High-converting results</span>
                 </div>
               </div>
 
-              <!-- Hero Action Buttons -->
-              <div class="hero-cta-row">
-                <a href="https://wa.me/923709315445" target="_blank" rel="noopener noreferrer" class="btn-fire-primary">
-                  <i class="fa-brands fa-whatsapp"></i>
-                  <span>Chat on WhatsApp</span>
-                </a>
-                
-                <a href="#services" class="btn-fire-ghost">
-                  <span>View Packages</span>
+              <div class="about-actions-row">
+                <a href="#showcase" class="btn-fire-primary">
+                  <span>Experience The Visual Journey</span>
                   <i class="fa-solid fa-arrow-down"></i>
                 </a>
-
-                <a href="mailto:contact.aetherkraft@gmail.com" class="btn-fire-ghost" aria-label="Send Email">
-                  <i class="fa-regular fa-envelope"></i>
-                  <span>Email Us</span>
-                </a>
+                <button id="hero-resume-trigger" class="btn-fire-ghost">
+                  <i class="fa-regular fa-file-lines"></i>
+                  <span>View Curriculum Vitae</span>
+                </button>
               </div>
 
-              <!-- Scroll cue -->
-              <div class="scroll-down-cue">
-                <div class="cue-mouse">
-                  <span class="cue-wheel"></span>
-                </div>
-                <span class="cue-label">Scroll to experience the journey</span>
-              </div>
-
-            </div>
-
-            <!-- STAGE 2: ABOUT VIEW (Fades in as scroll pulls camera back!) -->
-            <div id="about-stage-view" class="text-stage-panel">
-              <div class="about-glass-card">
-                <div class="section-pill">
-                  <span class="pill-fire-dot"></span>
-                  <span>About The Founder</span>
-                </div>
-                <h2 class="about-card-heading">
-                  Creativity <span class="text-fire-gradient">Is My Passion</span>
-                </h2>
-                <p class="about-card-lead">
-                  I'm Jawad, creative developer and founder of AETHER KRAFT based in Muzaffarabad, Kashmir.
-                </p>
-                <p class="about-card-desc">
-                  We reject slow, bloated website themes. Every interface is handcrafted from ground up to deliver blistering speed, striking visual presence, and measurable commercial results for our clients worldwide.
-                </p>
-
-                <!-- Key Metrics Matrix -->
-                <div class="about-metrics-grid">
-                  <div class="about-stat">
-                    <span class="stat-number">5+</span>
-                    <span class="stat-label">Years Crafting</span>
-                  </div>
-                  <div class="about-stat">
-                    <span class="stat-number">38+</span>
-                    <span class="stat-label">Projects Delivered</span>
-                  </div>
-                  <div class="about-stat">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Dedication</span>
-                  </div>
-                </div>
-
-                <div class="about-actions-row">
-                  <button id="btn-open-resume" class="btn-fire-primary">
-                    <i class="fa-solid fa-file-lines"></i>
-                    <span>View Resume</span>
-                  </button>
-                  <a href="#services" class="btn-fire-ghost">
-                    <span>Packages ($500+) &rarr;</span>
-                  </a>
-                </div>
-              </div>
             </div>
 
           </div>
 
-          <!-- RIGHT SIDE: THE DYNAMIC SEQUENTIAL FRAME VIEWPORT -->
-          <!-- Positioned on the right so text never obscures Jawad's face! -->
-          <div class="sequence-visual-col">
-            <div class="eclipse-corona-outer"></div>
-            
-            <div class="sequence-frame-card">
-              <!-- Ultra-High-Performance Canvas with Dirty-Checked RAF Render Loop -->
-              <canvas id="scroll-sequence-canvas" width="1280" height="720"></canvas>
-              <div class="frame-fire-overlay"></div>
-              <div class="frame-vignette-mask"></div>
+          <!-- RIGHT SIDE: INTERACTIVE 240-FRAME SCRUBBING CANVAS (Portrait of Jawad) -->
+          <div class="sequence-canvas-col">
+            <div class="canvas-outer-frame">
+              
+              <!-- Fiery Solar Corona Halo (Right Aligned) -->
+              <div class="canvas-corona-ring"></div>
+              
+              <!-- High-Performance Zero-Lag Canvas -->
+              <canvas id="sequence-canvas" width="1280" height="720"></canvas>
+              
+              <!-- Subtle Cinematic Vignette -->
+              <div class="canvas-vignette-overlay"></div>
 
-              <!-- Current Frame Progress Indicator Pill -->
-              <div class="frame-status-badge">
-                <span class="status-pulse-dot"></span>
-                <span id="frame-counter">FRAME 001 / 240</span>
+              <!-- Scrubbing Indicator Overlay -->
+              <div class="canvas-scrub-indicator">
+                <span class="scrub-dot"></span>
+                <span id="frame-counter-label" class="scrub-label">FRAME 001 / 240</span>
               </div>
+
             </div>
-
-            <!-- Floating Creator Tag -->
-            <div class="hero-creator-badge">
-              <div class="creator-avatar-wrap">
-                <i class="fa-solid fa-bolt"></i>
-              </div>
-              <div class="creator-details">
-                <span class="creator-name">Jawad</span>
-                <span class="creator-title">Lead Creative Developer &amp; Founder</span>
-              </div>
-            </div>
-
           </div>
 
         </div>
-      </div>
-    </section>
 
-    <!-- Invisible Anchor for Navigation Link to About -->
-    <div id="about-view" class="section-anchor"></div>
-
-
-    <!-- =========================================================================
-         SECTION 2: HORIZONTAL SCROLL ODYSSEY ("VISUAL JOURNEY THROUGH THE STUDIO")
-         Prompt 1 Requirement: "Horizontal image movement while vertically scrolling",
-         "Layered image compositions", "Sequential image storytelling"
-         ========================================================================= -->
-    <section id="odyssey" class="odyssey-pinned-section">
-      <div class="odyssey-sticky-wrap">
-        
-        <div class="odyssey-header-row">
-          <div class="container">
-            <div class="section-pill">
-              <span class="pill-fire-dot"></span>
-              <span>The Visual Journey</span>
-            </div>
-            <h2 class="section-heading">
-              The Creative <span class="text-fire-gradient">Odyssey</span>
-            </h2>
-            <p class="section-subtext">
-              Scroll down to navigate through the mindset, craftsmanship, and atmosphere of AETHER KRAFT.
-            </p>
-          </div>
-        </div>
-
-        <!-- Horizontal Track that shifts with vertical scroll -->
-        <div class="odyssey-track-window">
-          <div id="odyssey-track" class="odyssey-cards-track">
-            
-            <!-- Card 1: Vision (Frame 001) -->
-            <div class="odyssey-card">
-              <div class="odyssey-media">
-                <img src="ezgif-frame-001.jpg" alt="Jawad Portrait — The Vision" loading="lazy">
-                <div class="odyssey-overlay"></div>
-                <span class="odyssey-tag">01 &bull; MINDSET</span>
-              </div>
-              <div class="odyssey-body">
-                <h3>Visionary Standards</h3>
-                <p>Every customized website starts with an uncompromising visual vision and artistic precision.</p>
-              </div>
-            </div>
-
-            <!-- Card 2: Execution (Frame 060) -->
-            <div class="odyssey-card">
-              <div class="odyssey-media">
-                <img src="ezgif-frame-060.jpg" alt="Jawad Focusing — The Craft" loading="lazy">
-                <div class="odyssey-overlay"></div>
-                <span class="odyssey-tag">02 &bull; FOCUS</span>
-              </div>
-              <div class="odyssey-body">
-                <h3>Disciplined Execution</h3>
-                <p>Hand-crafted architectures written clean line-by-line for blistering sub-second response.</p>
-              </div>
-            </div>
-
-            <!-- Card 3: Workstation (Frame 120) -->
-            <div class="odyssey-card">
-              <div class="odyssey-media">
-                <img src="ezgif-frame-120.jpg" alt="Jawad at Workstation — The Studio" loading="lazy">
-                <div class="odyssey-overlay"></div>
-                <span class="odyssey-tag">03 &bull; WORKSTATION</span>
-              </div>
-              <div class="odyssey-body">
-                <h3>The Digital Forge</h3>
-                <p>Equipped with modern toolchains, high-DPI testing, and responsive device labs.</p>
-              </div>
-            </div>
-
-            <!-- Card 4: Atmosphere (Frame 180) -->
-            <div class="odyssey-card">
-              <div class="odyssey-media">
-                <img src="ezgif-frame-180.jpg" alt="Ambient Studio Setting — Kashmir" loading="lazy">
-                <div class="odyssey-overlay"></div>
-                <span class="odyssey-tag">04 &bull; ATMOSPHERE</span>
-              </div>
-              <div class="odyssey-body">
-                <h3>Night Owl Studio</h3>
-                <p>Operating from Muzaffarabad, Kashmir, delivering elite digital frontends for global clients.</p>
-              </div>
-            </div>
-
-            <!-- Card 5: The Deliverable (Frame 240) -->
-            <div class="odyssey-card">
-              <div class="odyssey-media">
-                <img src="ezgif-frame-240.jpg" alt="Jawad at Desk — Ready for Delivery" loading="lazy">
-                <div class="odyssey-overlay"></div>
-                <span class="odyssey-tag">05 &bull; IMPACT</span>
-              </div>
-              <div class="odyssey-body">
-                <h3>Custom Websites from $500</h3>
-                <p>Turn your complex digital aspirations into a seamless, high-converting digital storefront.</p>
-                <a href="#services" class="odyssey-link">Explore Packages &rarr;</a>
-              </div>
-            </div>
-
-          </div>
+        <!-- Scroll Down Prompt Indicator -->
+        <div class="scroll-down-cue">
+          <span>Scroll to scrub timeline</span>
+          <i class="fa-solid fa-chevron-down"></i>
         </div>
 
       </div>
@@ -394,277 +267,288 @@
 
 
     <!-- =========================================================================
-         SECTION 3: INTERACTIVE FRAME NARRATIVE STRIP (REEL)
-         Prompt 1 Requirement: "Interactive visual reel letting visitors inspect frames"
+         SECTION 2: VISUAL SHOWCASE & THE VISUAL JOURNEY
+         Using photos from the portfolio folder to create an intentional visual journey
          ========================================================================= -->
-    <section class="reel-strip-section">
-      <div class="container">
-        <div class="reel-container-box">
-          <div class="reel-header-row">
-            <div>
-              <h4 class="reel-box-title"><i class="fa-solid fa-film"></i> Interactive Cinematic Sequence</h4>
-              <p class="reel-box-sub">Click or tap any keyframe to jump the scroll sequence directly:</p>
-            </div>
-            <span class="reel-counter-badge">240 Photographic Keyframes</span>
-          </div>
-
-          <div class="reel-thumbnails-row">
-            <button class="thumb-btn active" data-frame="1">
-              <img src="ezgif-frame-001.jpg" alt="Frame 001">
-              <span>001 &bull; Close-up</span>
-            </button>
-            <button class="thumb-btn" data-frame="35">
-              <img src="ezgif-frame-035.jpg" alt="Frame 035">
-              <span>035 &bull; Motion</span>
-            </button>
-            <button class="thumb-btn" data-frame="70">
-              <img src="ezgif-frame-070.jpg" alt="Frame 070">
-              <span>070 &bull; Focus</span>
-            </button>
-            <button class="thumb-btn" data-frame="110">
-              <img src="ezgif-frame-110.jpg" alt="Frame 110">
-              <span>110 &bull; Desk</span>
-            </button>
-            <button class="thumb-btn" data-frame="150">
-              <img src="ezgif-frame-150.jpg" alt="Frame 150">
-              <span>150 &bull; Studio</span>
-            </button>
-            <button class="thumb-btn" data-frame="185">
-              <img src="ezgif-frame-185.jpg" alt="Frame 185">
-              <span>185 &bull; Ambient</span>
-            </button>
-            <button class="thumb-btn" data-frame="215">
-              <img src="ezgif-frame-215.jpg" alt="Frame 215">
-              <span>215 &bull; Wide</span>
-            </button>
-            <button class="thumb-btn" data-frame="240">
-              <img src="ezgif-frame-240.jpg" alt="Frame 240">
-              <span>240 &bull; Gaze</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- =========================================================================
-         SECTION 4: SERVICES & PRICING: CUSTOMIZED WEBSITE DEVELOPMENT ($500+)
-         ========================================================================= -->
-    <section id="services" class="section-padding services-section">
+    <section id="showcase" class="section-padding showcase-section">
       <div class="container">
         
         <div class="section-header text-center">
           <div class="section-pill">
             <span class="pill-fire-dot"></span>
-            <span>Single Core Focus</span>
+            <span>Visual Storytelling</span>
           </div>
           <h2 class="section-heading">
-            Customized Website <span class="text-fire-gradient">Development</span>
+            The Studio &amp; <span class="text-fire-gradient">Creative Journey</span>
           </h2>
           <p class="section-subtext">
-            We focus exclusively on creating custom, responsive, performance-focused, and mobile-first websites. No generic IT, no template flipping.
+            An intentional visual walkthrough across authentic portfolio frames—capturing mindset, precision execution, and studio craft.
           </p>
         </div>
 
-        <!-- Featured Pricing & Deliverables Box -->
-        <div class="pricing-showcase-card">
-          <div class="pricing-card-corona"></div>
+        <!-- Featured Visual Grid: Portrait, Desk, Night Session, Studio -->
+        <div class="showcase-visual-grid">
           
-          <div class="pricing-header-grid">
-            <div>
-              <span class="pricing-badge">Full-Service Studio Package</span>
-              <h3 class="pricing-main-title">Customized Website Development</h3>
-              <p class="pricing-tagline-text">
-                Customized websites starting from $500. Every website is designed and developed around your goals, brand, and audience.
+          <!-- Card 1: Close-up Portrait (Frame 001) -->
+          <div class="visual-story-card large-portrait">
+            <div class="story-img-wrap">
+              <img src="ezgif-frame-001.jpg" alt="Jawad — Creative Portrait Close-up" loading="lazy" class="story-img">
+              <div class="story-overlay"></div>
+              <span class="story-badge">PORTRAIT ESSENCE &bull; FRAME 001</span>
+            </div>
+            <div class="story-caption">
+              <h4>Creative Vision &amp; Direct Focus</h4>
+              <p>Every project starts with deep conceptual clarity, aligning visual aesthetics with your strategic business goals.</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Typing at Desk (Frame 080) -->
+          <div class="visual-story-card standard-card">
+            <div class="story-img-wrap">
+              <img src="ezgif-frame-080.jpg" alt="Jawad — Engineering at the keyboard" loading="lazy" class="story-img">
+              <div class="story-overlay"></div>
+              <span class="story-badge">WORKFLOW &bull; FRAME 080</span>
+            </div>
+            <div class="story-caption">
+              <h4>Engineering with Precision</h4>
+              <p>Handcrafted codebases utilizing semantic markup, modern CSS architectures, and zero bloated libraries.</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Ambient Night Session (Frame 160) -->
+          <div class="visual-story-card standard-card">
+            <div class="story-img-wrap">
+              <img src="ezgif-frame-160.jpg" alt="Jawad — Focused night engineering session" loading="lazy" class="story-img">
+              <div class="story-overlay"></div>
+              <span class="story-badge">DEEP DIVE &bull; FRAME 160</span>
+            </div>
+            <div class="story-caption">
+              <h4>Performance &amp; Motion Refinement</h4>
+              <p>Profiling Core Web Vitals, optimizing dirty-checked frame rendering, and eliminating layout thrashing.</p>
+            </div>
+          </div>
+
+          <!-- Card 4: Full Studio View (Frame 240) -->
+          <div class="visual-story-card full-span-card">
+            <div class="story-img-wrap">
+              <img src="ezgif-frame-240.jpg" alt="Jawad — Complete AETHER KRAFT Studio Setup" loading="lazy" class="story-img">
+              <div class="story-overlay"></div>
+              <span class="story-badge">THE ENVIRONMENT &bull; FRAME 240</span>
+            </div>
+            <div class="story-caption">
+              <h4>The AETHERKRAFT Command Center</h4>
+              <p>A dedicated creative studio environment designed for uninterrupted focus, rapid prototyping, and delivering world-class digital experiences.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 3: SELECTED WORKS / PROJECTS SECTION
+         Faithfully matching reference website with filter pills and card layout
+         ========================================================================= -->
+    <section id="projects" class="section-padding projects-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-pill">
+            <span class="pill-fire-dot"></span>
+            <span>Selected Works</span>
+          </div>
+          <h2 class="section-heading">
+            I Make <span class="text-fire-gradient">Incredible Projects</span>
+          </h2>
+          <p class="section-subtext">
+            Curated web solutions engineered with modern frameworks, high performance, and polished user journeys.
+          </p>
+
+          <!-- Filter Pills -->
+          <div class="filter-pills-row" role="tablist">
+            <button class="filter-pill active" data-filter="all">All Projects</button>
+            <button class="filter-pill" data-filter="web">Web Apps</button>
+            <button class="filter-pill" data-filter="ecommerce">E-Commerce</button>
+            <button class="filter-pill" data-filter="interactive">Interactive</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid (01 to 06) -->
+        <div class="projects-grid">
+          
+          <!-- PROJECT 01: E-COMMERCE -->
+          <article class="project-card" data-category="ecommerce">
+            <div class="project-card-header">
+              <span class="project-num">01</span>
+              <span class="project-category-tag">E-Commerce &bull; Performance</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Aura Luxe Fashion Boutique</h3>
+              <p class="project-desc">
+                High-converting luxury e-commerce experience featuring smooth micro-animations, instant client-side cart transitions, and high Core Web Vitals optimization.
               </p>
-            </div>
-            <div class="price-figure-box">
-              <span class="price-lead">Starting From</span>
-              <div class="price-amount">
-                <span class="currency">$</span>
-                <span class="number">500</span>
-              </div>
-              <span class="price-scope">Transparent quote based on project scope</span>
-            </div>
-          </div>
-
-          <div class="pricing-features-grid">
-            
-            <div class="feature-col">
-              <div class="feature-item">
-                <span class="feature-icon"><i class="fa-solid fa-check"></i></span>
-                <div>
-                  <strong>Bespoke Visual Architecture</strong>
-                  <p>Tailored UI/UX layout crafted exclusively for your industry and distinct value proposition.</p>
-                </div>
-              </div>
-              <div class="feature-item">
-                <span class="feature-icon"><i class="fa-solid fa-check"></i></span>
-                <div>
-                  <strong>Mobile-First Ergonomics</strong>
-                  <p>Tested on smartphones, tablets, and wide monitors for zero layout breaking and effortless touch ergonomics.</p>
-                </div>
-              </div>
-              <div class="feature-item">
-                <span class="feature-icon"><i class="fa-solid fa-check"></i></span>
-                <div>
-                  <strong>Peak Performance &amp; SEO</strong>
-                  <p>Semantic markup, clean assets, optimized metadata, and lightning load speeds.</p>
-                </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">Stripe API</span>
+                <span class="tech-tag">Web Vitals</span>
               </div>
             </div>
-
-            <div class="feature-col">
-              <div class="feature-item">
-                <span class="feature-icon"><i class="fa-solid fa-check"></i></span>
-                <div>
-                  <strong>High-End Interactive Motion</strong>
-                  <p>Fluid micro-interactions, subtle reveals, and transitions that give your brand a premium feel.</p>
-                </div>
-              </div>
-              <div class="feature-item">
-                <span class="feature-icon"><i class="fa-solid fa-check"></i></span>
-                <div>
-                  <strong>Contact &amp; Lead Funnels</strong>
-                  <p>Direct WhatsApp integration, smart email routing, and lead generation contact forms.</p>
-                </div>
-              </div>
-              <div class="feature-item">
-                <span class="feature-icon"><i class="fa-solid fa-check"></i></span>
-                <div>
-                  <strong>Production Deployment &amp; Handover</strong>
-                  <p>Domain configuration, SSL security, hosting setup, and complete source code ownership.</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="pricing-card-actions">
-            <a href="https://wa.me/923709315445" target="_blank" rel="noopener noreferrer" class="btn-fire-primary btn-large">
-              <i class="fa-brands fa-whatsapp"></i>
-              <span>Discuss Your Project on WhatsApp</span>
-            </a>
-            <a href="mailto:contact.aetherkraft@gmail.com" class="btn-fire-ghost btn-large">
-              <i class="fa-regular fa-envelope"></i>
-              <span>Email: contact.aetherkraft@gmail.com</span>
-            </a>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- =========================================================================
-         SECTION 5: SELECTED WORKS (PROJECTS)
-         ========================================================================= -->
-    <section id="portfolio" class="section-padding portfolio-section">
-      <div class="container">
-        
-        <div class="section-header text-center">
-          <div class="section-pill">
-            <span class="pill-fire-dot"></span>
-            <span>Proof of Craft</span>
-          </div>
-          <h2 class="section-heading">
-            Selected <span class="text-fire-gradient">Works</span>
-          </h2>
-          <p class="section-subtext">
-            A preview of bespoke client solutions engineered by AETHER KRAFT with high aesthetics and performance.
-          </p>
-
-          <!-- Interactive Filter Pills -->
-          <div class="works-filter-bar">
-            <button class="filter-btn active" data-filter="all">All Projects</button>
-            <button class="filter-btn" data-filter="commerce">E-Commerce</button>
-            <button class="filter-btn" data-filter="saas">SaaS &amp; Web App</button>
-            <button class="filter-btn" data-filter="system">Design Systems</button>
-          </div>
-        </div>
-
-        <div class="portfolio-grid">
-          
-          <!-- Project 01 -->
-          <article class="work-card" data-cat="commerce">
-            <div class="work-card-header">
-              <span class="work-num">01</span>
-              <span class="work-badge">E-Commerce</span>
-            </div>
-            <div class="work-preview preview-commerce">
-              <div class="preview-browser-bar">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="preview-content-box">
-                <span class="mini-tag">AETHER KRAFT &bull; Bespoke</span>
-                <h4>Luxury Brand E-Commerce Storefront</h4>
-                <p>Engineered for lightning checkout and fluid product discovery.</p>
-              </div>
-            </div>
-            <div class="work-card-body">
-              <h3 class="work-title">High-Conversion Apparel Platform</h3>
-              <p class="work-desc">Custom responsive architecture with modern payment gateway integration, smooth micro-interactions, and zero template dependencies.</p>
-              <div class="work-tags">
-                <span>Vanilla JS</span>
-                <span>REST API</span>
-                <span>CSS Grid</span>
-                <span>High Performance</span>
-              </div>
+            <div class="project-card-footer">
+              <a href="#contact" class="btn-card-link">
+                <span>Live Demo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-card-github" aria-label="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
             </div>
           </article>
 
-          <!-- Project 02 -->
-          <article class="work-card" data-cat="saas">
-            <div class="work-card-header">
-              <span class="work-num">02</span>
-              <span class="work-badge">Landing Architecture</span>
+          <!-- PROJECT 02: WEB APP -->
+          <article class="project-card" data-category="web">
+            <div class="project-card-header">
+              <span class="project-num">02</span>
+              <span class="project-category-tag">Web App &bull; Dashboard</span>
             </div>
-            <div class="work-preview preview-landing">
-              <div class="preview-browser-bar">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="preview-content-box">
-                <span class="mini-tag">Performance First</span>
-                <h4>SaaS Product Showcase &amp; Portal</h4>
-                <p>Interactive feature walk-throughs with sub-second page loads.</p>
+            <div class="project-card-body">
+              <h3 class="project-title">PulseMetrics Analytics Hub</h3>
+              <p class="project-desc">
+                Modern SaaS metrics dashboard with interactive data visualization, real-time WebSocket feeds, responsive dark theme, and exportable report generation.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Chart.js</span>
+                <span class="tech-tag">REST APIs</span>
               </div>
             </div>
-            <div class="work-card-body">
-              <h3 class="work-title">Interactive Product Experience</h3>
-              <p class="work-desc">Created to convert visitors with rich storytelling, modern typography hierarchy, and lightweight scroll-driven visual highlights.</p>
-              <div class="work-tags">
-                <span>Custom Motion</span>
-                <span>Mobile Ergonomics</span>
-                <span>Core Web Vitals</span>
-              </div>
+            <div class="project-card-footer">
+              <a href="#contact" class="btn-card-link">
+                <span>Live Demo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-card-github" aria-label="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
             </div>
           </article>
 
-          <!-- Project 03 -->
-          <article class="work-card" data-cat="system">
-            <div class="work-card-header">
-              <span class="work-num">03</span>
-              <span class="work-badge">Custom System</span>
+          <!-- PROJECT 03: INTERACTIVE -->
+          <article class="project-card" data-category="interactive">
+            <div class="project-card-header">
+              <span class="project-num">03</span>
+              <span class="project-category-tag">Interactive &bull; Motion</span>
             </div>
-            <div class="work-preview preview-system">
-              <div class="preview-browser-bar">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="preview-content-box">
-                <span class="mini-tag">Digital Studio</span>
-                <h4>Aether Kraft UI &amp; Component System</h4>
-                <p>Reusable, modular design tokens built for rapid deployment.</p>
+            <div class="project-card-body">
+              <h3 class="project-title">Celestial Horizon 3D Canvas</h3>
+              <p class="project-desc">
+                Immersive interactive canvas landing page featuring custom particle physics, scroll-bound 3D coordinates, and hardware-accelerated shaders.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5 Canvas</span>
+                <span class="tech-tag">Three.js</span>
+                <span class="tech-tag">GSAP</span>
+                <span class="tech-tag">GLSL</span>
               </div>
             </div>
-            <div class="work-card-body">
-              <h3 class="work-title">Custom Design System &amp; Portal</h3>
-              <p class="work-desc">A unified digital design system ensuring consistent branding, accessible contrast ratios, and seamless responsive scaling.</p>
-              <div class="work-tags">
-                <span>Design System</span>
-                <span>Responsive CSS</span>
-                <span>Accessibility</span>
+            <div class="project-card-footer">
+              <a href="#contact" class="btn-card-link">
+                <span>Live Demo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-card-github" aria-label="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 04: WEB APP -->
+          <article class="project-card" data-category="web">
+            <div class="project-card-header">
+              <span class="project-num">04</span>
+              <span class="project-category-tag">Web App &bull; AI Integration</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Synthetix AI Prompt Engine</h3>
+              <p class="project-desc">
+                Intelligent content generation platform featuring streaming markdown output, custom syntax highlighting, and responsive mobile architecture.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">OpenAI API</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Modern CSS</span>
               </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="#contact" class="btn-card-link">
+                <span>Live Demo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-card-github" aria-label="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 05: INTERACTIVE -->
+          <article class="project-card" data-category="interactive">
+            <div class="project-card-header">
+              <span class="project-num">05</span>
+              <span class="project-category-tag">Portfolio &bull; Sound Design</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Verve Creative Agency Portfolio</h3>
+              <p class="project-desc">
+                Dynamic award-winning creative agency showcase featuring smooth page transitions, web audio feedback, and magnetic cursor navigation.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">JavaScript (ES6+)</span>
+                <span class="tech-tag">Barba.js</span>
+                <span class="tech-tag">GSAP ScrollTrigger</span>
+                <span class="tech-tag">Web Audio</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="#contact" class="btn-card-link">
+                <span>Live Demo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-card-github" aria-label="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 06: E-COMMERCE -->
+          <article class="project-card" data-category="ecommerce">
+            <div class="project-card-header">
+              <span class="project-num">06</span>
+              <span class="project-category-tag">E-Commerce &bull; Design System</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Zenith Modular Gear Store</h3>
+              <p class="project-desc">
+                Minimalist technical apparel shop with bespoke product configurator, high-DPI zoom inspection, and 99+ mobile performance score.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Modern CSS Grid</span>
+                <span class="tech-tag">Vanilla JS</span>
+                <span class="tech-tag">Shopify Storefront</span>
+                <span class="tech-tag">Figma</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="#contact" class="btn-card-link">
+                <span>Live Demo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-card-github" aria-label="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
             </div>
           </article>
 
@@ -675,10 +559,10 @@
 
 
     <!-- =========================================================================
-         SECTION 6: INTERACTIVE TIMELINE (EXPERIENCE & EDUCATION)
-         Faithfully matching the video's interactive toggle [ Experience ] [ Education ]
+         SECTION 4: PROFESSIONAL JOURNEY & RESUME SECTION
+         Interactive Toggle [ Experience ] [ Education ] & Full Resume View Modal
          ========================================================================= -->
-    <section id="journey" class="section-padding timeline-section">
+    <section id="experience" class="section-padding timeline-section">
       <div class="container">
         
         <div class="section-header text-center">
@@ -687,14 +571,14 @@
             <span>Career Milestones</span>
           </div>
           <h2 class="section-heading">
-            Professional <span class="text-fire-gradient">Journey</span>
+            My Professional <span class="text-fire-gradient">Journey</span>
           </h2>
           <p class="section-subtext">
-            A track record of high-performance frontend engineering and continuous growth.
+            A track record of high-performance frontend engineering, design systems, and continuous growth.
           </p>
 
-          <!-- Toggle Pills -->
-          <div class="timeline-toggle-container">
+          <!-- Interactive Timeline Toggle (Directly inspired by reference website) -->
+          <div class="timeline-toggle-wrapper">
             <button id="toggle-experience" class="timeline-toggle-btn active" data-tab="experience">
               <i class="fa-solid fa-briefcase"></i>
               <span>Experience</span>
@@ -706,104 +590,133 @@
           </div>
         </div>
 
-        <!-- TIMELINE 1: EXPERIENCE -->
-        <div id="experience-pane" class="timeline-pane active">
-          <div class="timeline-track">
-            
-            <div class="timeline-item">
-              <div class="timeline-dot">
-                <span class="dot-core"></span>
-                <span class="dot-ring"></span>
-              </div>
-              <div class="timeline-meta">
-                <span class="timeline-date">Oct 2025 — Present</span>
-                <span class="timeline-company">AETHER KRAFT / Phaeton</span>
-              </div>
-              <div class="timeline-card">
-                <h3 class="timeline-role">Lead Creative Developer &amp; Founder</h3>
-                <p class="timeline-description">
-                  Directing customized website development projects, architecting ultra-fast responsive client solutions, and developing bespoke user experiences starting from $500.
-                </p>
-                <div class="timeline-tags">
-                  <span>Custom Web Dev</span>
-                  <span>UI Architecture</span>
-                  <span>Performance</span>
+        <!-- TIMELINE CONTAINER -->
+        <div class="timeline-track-container">
+          
+          <!-- TIMELINE TAB 1: WORK EXPERIENCE -->
+          <div id="timeline-experience-tab" class="timeline-tab-content active">
+            <div class="timeline-tree">
+              
+              <div class="timeline-node">
+                <div class="node-marker">
+                  <span class="marker-dot"></span>
+                  <span class="marker-glow"></span>
+                </div>
+                <div class="node-card">
+                  <div class="node-time">2024 &mdash; Present</div>
+                  <h3 class="node-title">Lead Creative Developer</h3>
+                  <div class="node-company">AETHERKRAFT Studio</div>
+                  <p class="node-desc">
+                    Directing architecture and custom development for high-end bespoke client websites. Implementing high-FPS micro-animations, zero-lag image scrubbing engines, and custom branding integrations.
+                  </p>
+                  <div class="node-skills">
+                    <span>JavaScript (ES6+)</span>
+                    <span>GSAP &amp; Canvas</span>
+                    <span>Tailwind CSS</span>
+                    <span>Core Web Vitals</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="timeline-item">
-              <div class="timeline-dot">
-                <span class="dot-core"></span>
-                <span class="dot-ring"></span>
-              </div>
-              <div class="timeline-meta">
-                <span class="timeline-date">Aug 2024 — July 2025</span>
-                <span class="timeline-company">Skillity Zone</span>
-              </div>
-              <div class="timeline-card">
-                <h3 class="timeline-role">Frontend Web Developer</h3>
-                <p class="timeline-description">
-                  Engineered interactive client landing pages, dashboard user interfaces, and modular component systems using modern JavaScript, CSS Grid, and REST APIs.
-                </p>
-                <div class="timeline-tags">
-                  <span>JavaScript</span>
-                  <span>Responsive CSS</span>
-                  <span>REST APIs</span>
+              <div class="timeline-node">
+                <div class="node-marker">
+                  <span class="marker-dot"></span>
+                  <span class="marker-glow"></span>
+                </div>
+                <div class="node-card">
+                  <div class="node-time">2023 &mdash; 2024</div>
+                  <h3 class="node-title">Frontend &amp; Full-Stack Engineer</h3>
+                  <div class="node-company">Freelance &amp; Global Client Projects</div>
+                  <p class="node-desc">
+                    Engineered bespoke e-commerce and SaaS landing pages for international clients. Focused on mobile responsiveness, accessible navigation, and rapid page load performance.
+                  </p>
+                  <div class="node-skills">
+                    <span>React.js</span>
+                    <span>Next.js</span>
+                    <span>REST APIs</span>
+                    <span>Figma to Code</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
+              <div class="timeline-node">
+                <div class="node-marker">
+                  <span class="marker-dot"></span>
+                  <span class="marker-glow"></span>
+                </div>
+                <div class="node-card">
+                  <div class="node-time">2022 &mdash; 2023</div>
+                  <h3 class="node-title">UI/UX &amp; Web Craftsman</h3>
+                  <div class="node-company">Independent Creative Explorations</div>
+                  <p class="node-desc">
+                    Explored experimental interactive web mechanics, CSS custom property theming, micro-interactions, and design systems for performant modern web standards.
+                  </p>
+                  <div class="node-skills">
+                    <span>Modern CSS &amp; Grid</span>
+                    <span>Vanilla JS</span>
+                    <span>Design Systems</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
+
+          <!-- TIMELINE TAB 2: EDUCATION -->
+          <div id="timeline-education-tab" class="timeline-tab-content">
+            <div class="timeline-tree">
+              
+              <div class="timeline-node">
+                <div class="node-marker">
+                  <span class="marker-dot"></span>
+                  <span class="marker-glow"></span>
+                </div>
+                <div class="node-card">
+                  <div class="node-time">2025 &mdash; Present</div>
+                  <h3 class="node-title">ADS (B.Sc) in Computer Science</h3>
+                  <div class="node-company">Shah Abdul Latif University Khairpur</div>
+                  <p class="node-desc">
+                    Advanced study in software engineering principles, algorithm design, data structures, and computer science foundations applied to modern web systems.
+                  </p>
+                  <div class="node-skills">
+                    <span>Computer Science</span>
+                    <span>Software Engineering</span>
+                    <span>Database Systems</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-node">
+                <div class="node-marker">
+                  <span class="marker-dot"></span>
+                  <span class="marker-glow"></span>
+                </div>
+                <div class="node-card">
+                  <div class="node-time">2023 &mdash; 2024</div>
+                  <h3 class="node-title">Intermediate (Pre-Engineering)</h3>
+                  <div class="node-company">Govt Islamia Science College Sukkur</div>
+                  <p class="node-desc">
+                    Rigorous background in Higher Mathematics, Applied Physics, and analytical problem-solving with top academic standing.
+                  </p>
+                  <div class="node-skills">
+                    <span>Mathematics</span>
+                    <span>Applied Physics</span>
+                    <span>Analytical Logic</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
 
-        <!-- TIMELINE 2: EDUCATION -->
-        <div id="education-pane" class="timeline-pane">
-          <div class="timeline-track">
-            
-            <div class="timeline-item">
-              <div class="timeline-dot">
-                <span class="dot-core"></span>
-                <span class="dot-ring"></span>
-              </div>
-              <div class="timeline-meta">
-                <span class="timeline-date">2025 — Present</span>
-                <span class="timeline-company">Shah Abdul Latif University Khairpur</span>
-              </div>
-              <div class="timeline-card">
-                <h3 class="timeline-role">ADS (B.Sc) in Computer Science</h3>
-                <p class="timeline-description">
-                  Advancing core software engineering foundations, computational logic, data structures, and distributed web architectures.
-                </p>
-                <div class="timeline-tags">
-                  <span>Computer Science</span>
-                  <span>Engineering</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-dot">
-                <span class="dot-core"></span>
-                <span class="dot-ring"></span>
-              </div>
-              <div class="timeline-meta">
-                <span class="timeline-date">2023 — 2024</span>
-                <span class="timeline-company">Govt Islamia Science College Sukkur</span>
-              </div>
-              <div class="timeline-card">
-                <h3 class="timeline-role">Intermediate (Pre-Engineering)</h3>
-                <p class="timeline-description">
-                  Completed intermediate education in advanced mathematics, physics, and analytical problem solving.
-                </p>
-                <div class="timeline-tags">
-                  <span>Mathematics</span>
-                  <span>Analytical Thinking</span>
-                </div>
-              </div>
-            </div>
-
-          </div>
+        <!-- Prominent Resume Action Bar -->
+        <div class="resume-cta-wrap text-center">
+          <button id="btn-open-resume" class="btn-fire-primary">
+            <i class="fa-regular fa-file-lines"></i>
+            <span>View Full Resume &bull; Curriculum Vitae</span>
+          </button>
         </div>
 
       </div>
@@ -811,26 +724,27 @@
 
 
     <!-- =========================================================================
-         SECTION 7: WHAT I OFFER (CAPABILITIES & TOOLS)
+         SECTION 5: CAPABILITIES & OFFERINGS
          ========================================================================= -->
-    <section class="section-padding capabilities-section">
+    <section id="skills" class="section-padding capabilities-section">
       <div class="container">
         
         <div class="section-header text-center">
           <div class="section-pill">
             <span class="pill-fire-dot"></span>
-            <span>Technical Capabilities</span>
+            <span>Capabilities</span>
           </div>
           <h2 class="section-heading">
             What I <span class="text-fire-gradient">Offer</span>
           </h2>
           <p class="section-subtext">
-            A specialized toolchain honed for bespoke web craftsmanship.
+            A specialized toolchain honed for bespoke web craftsmanship and commercial impact.
           </p>
         </div>
 
         <div class="capabilities-grid">
           
+          <!-- Card 1: Development Skills -->
           <div class="capability-card">
             <div class="cap-icon-box"><i class="fa-solid fa-code"></i></div>
             <h3 class="cap-title">Development Skills</h3>
@@ -845,9 +759,10 @@
             </div>
           </div>
 
+          <!-- Card 2: Development Tools -->
           <div class="capability-card">
             <div class="cap-icon-box"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-            <h3 class="cap-title">Development Tools</h3>
+            <h3 class="cap-title">Development Tools &amp; Arsenal</h3>
             <p class="cap-desc">Leveraging the latest industry-standard toolchain to accelerate iteration and ship robust, high-converting code.</p>
             <div class="skill-pills-wrap">
               <span class="skill-pill"><i class="fa-solid fa-code"></i> VS Code</span>
@@ -866,17 +781,220 @@
 
 
     <!-- =========================================================================
-         SECTION 8: FULL-BLEED PARALLAX BANNER (Frame 240)
+         SECTION 6: PRICING & INVESTMENT
+         *THE ONLY SECTION WHERE PRICING IS MENTIONED!*
+         "Starting from $499. Every website is designed and developed around your
+         goals, brand, and audience."
+         ========================================================================= -->
+    <section id="pricing" class="section-padding pricing-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-pill">
+            <span class="pill-fire-dot"></span>
+            <span>Transparent Investment</span>
+          </div>
+          <h2 class="section-heading">
+            Customized Websites <span class="text-fire-gradient">Starting from $499</span>
+          </h2>
+          <p class="section-subtext">
+            Every website is designed and developed around your goals, brand, and audience. Transparent pricing with zero hidden fees.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          
+          <!-- Package 1: Starter -->
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <span class="package-tag">Bespoke Launch</span>
+              <h3 class="package-name">Starter Studio</h3>
+              <div class="price-display">
+                <span class="currency">$</span>
+                <span class="amount">499</span>
+                <span class="term">/ project</span>
+              </div>
+              <p class="package-summary">Ideal for professionals, personal brands, and high-impact landing pages.</p>
+            </div>
+            <ul class="package-features">
+              <li><i class="fa-solid fa-check"></i> Bespoke Single-Page Architecture</li>
+              <li><i class="fa-solid fa-check"></i> 100% Custom Design (Zero Templates)</li>
+              <li><i class="fa-solid fa-check"></i> Fluid Mobile &amp; Tablet Ergonomics</li>
+              <li><i class="fa-solid fa-check"></i> Direct WhatsApp &amp; Contact Integration</li>
+              <li><i class="fa-solid fa-check"></i> Core Web Vitals &amp; Fast Load Tuning</li>
+              <li><i class="fa-solid fa-check"></i> Delivery in 5–7 Days</li>
+            </ul>
+            <div class="pricing-card-footer">
+              <a href="#contact" class="btn-fire-ghost w-full text-center" data-budget="499-1000">
+                <span>Choose Starter ($499)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Package 2: Signature (Featured) -->
+          <div class="pricing-card featured-pricing-card">
+            <div class="featured-glow-ribbon">
+              <i class="fa-solid fa-fire"></i> Most Popular
+            </div>
+            <div class="pricing-card-header">
+              <span class="package-tag">Signature Growth</span>
+              <h3 class="package-name">Signature Studio</h3>
+              <div class="price-display">
+                <span class="currency">$</span>
+                <span class="amount">899</span>
+                <span class="term">/ project</span>
+              </div>
+              <p class="package-summary">Designed for scaling brands, creative studios, and multi-page flagships.</p>
+            </div>
+            <ul class="package-features">
+              <li><i class="fa-solid fa-check"></i> Multi-Page Architecture (Up to 5 Pages)</li>
+              <li><i class="fa-solid fa-check"></i> Bespoke Scroll Interactions &amp; Micro-Motion</li>
+              <li><i class="fa-solid fa-check"></i> Dynamic CMS / Case Study Showcase</li>
+              <li><i class="fa-solid fa-check"></i> Advanced On-Page SEO &amp; Rich Schema</li>
+              <li><i class="fa-solid fa-check"></i> 95+ Mobile Speed Guarantee</li>
+              <li><i class="fa-solid fa-check"></i> 14 Days Post-Launch Support</li>
+            </ul>
+            <div class="pricing-card-footer">
+              <a href="#contact" class="btn-fire-primary w-full text-center" data-budget="1000-2500">
+                <span>Choose Signature ($899)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Package 3: Enterprise -->
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <span class="package-tag">Enterprise / Custom</span>
+              <h3 class="package-name">Full-Stack Web App</h3>
+              <div class="price-display">
+                <span class="currency">$</span>
+                <span class="amount">1,499</span>
+                <span class="term">+ / project</span>
+              </div>
+              <p class="package-summary">Complex custom web applications, SaaS frontends, or interactive 3D platforms.</p>
+            </div>
+            <ul class="package-features">
+              <li><i class="fa-solid fa-check"></i> Custom Web Application Frontend / UI</li>
+              <li><i class="fa-solid fa-check"></i> Interactive Canvas / WebGL / Custom Math</li>
+              <li><i class="fa-solid fa-check"></i> REST / GraphQL API &amp; Auth Integrations</li>
+              <li><i class="fa-solid fa-check"></i> High-Capacity Serverless Deployment</li>
+              <li><i class="fa-solid fa-check"></i> Priority 24/7 Direct Engineering Line</li>
+              <li><i class="fa-solid fa-check"></i> 30 Days Ongoing Maintenance</li>
+            </ul>
+            <div class="pricing-card-footer">
+              <a href="#contact" class="btn-fire-ghost w-full text-center" data-budget="2500+">
+                <span>Contact for Scope</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 7: TESTIMONIALS
+         Feedback from team leads, collaborators, and supervisors
+         ========================================================================= -->
+    <section id="testimonials" class="section-padding testimonials-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-pill">
+            <span class="pill-fire-dot"></span>
+            <span>Endorsements</span>
+          </div>
+          <h2 class="section-heading">
+            What Clients <span class="text-fire-gradient">Say</span>
+          </h2>
+          <p class="section-subtext">
+            Authentic feedback on craftsmanship, communication, and engineering quality.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <span>TL</span>
+              </div>
+              <div class="testimonial-info">
+                <h4 class="reviewer-name">Engineering Lead</h4>
+                <div class="reviewer-rating">
+                  <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span class="score">5.0</span>
+                </div>
+              </div>
+            </div>
+            <p class="testimonial-quote">
+              &ldquo;Jawad demonstrates exceptional attention to detail. His ability to translate complex design layouts into clean, fluid, and responsive frontend code with zero lag is truly top tier.&rdquo;
+            </p>
+            <div class="testimonial-glow-border"></div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <span>PC</span>
+              </div>
+              <div class="testimonial-info">
+                <h4 class="reviewer-name">Founder &bull; SaaS Startup</h4>
+                <div class="reviewer-rating">
+                  <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span class="score">5.0</span>
+                </div>
+              </div>
+            </div>
+            <p class="testimonial-quote">
+              &ldquo;Jawad combines sharp technical skills with genuine creative passion. He went above and beyond to ensure our website looks ultra-premium and performs effortlessly across all mobile screens.&rdquo;
+            </p>
+            <div class="testimonial-glow-border"></div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <span>PS</span>
+              </div>
+              <div class="testimonial-info">
+                <h4 class="reviewer-name">Product Supervisor</h4>
+                <div class="reviewer-rating">
+                  <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span class="score">5.0</span>
+                </div>
+              </div>
+            </div>
+            <p class="testimonial-quote">
+              &ldquo;Reliable, communicative, and exceptionally fast at solving intricate UI challenges. Working with Jawad on customized web development has been a complete game changer.&rdquo;
+            </p>
+            <div class="testimonial-glow-border"></div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 8: FULL-BLEED STUDIO BANNER (Frame 240)
+         (NO pricing here, NO address here!)
          ========================================================================= -->
     <section class="banner-section">
       <div class="container">
         <div class="studio-feature-banner">
-          <img src="ezgif-frame-240.jpg" alt="Jawad at the AETHER KRAFT Studio Desk" loading="lazy" class="banner-bg-img">
+          <img src="ezgif-frame-240.jpg" alt="Jawad at the AETHERKRAFT Studio Desk" loading="lazy" class="banner-bg-img">
           <div class="banner-eclipse-mask"></div>
           <div class="banner-content">
-            <span class="banner-tag">MUZAFFARABAD, KASHMIR &bull; GLOBAL CLIENTS</span>
+            <span class="banner-tag">HIGH-PERFORMANCE WEB ARCHITECTURE</span>
             <h3 class="banner-title">Ready to Elevate Your Online Presence?</h3>
-            <p class="banner-desc">Get a customized website starting from $500, tailored specifically for your target audience.</p>
+            <p class="banner-desc">Let's engineer a bespoke website tailored specifically to capture your audience and amplify your brand.</p>
             <div class="banner-btn-group">
               <a href="https://wa.me/923709315445" target="_blank" rel="noopener noreferrer" class="btn-fire-primary">
                 <i class="fa-brands fa-whatsapp"></i>
@@ -895,6 +1013,7 @@
 
     <!-- =========================================================================
          SECTION 9: CONTACT & LOCATION SECTION
+         *THE ONLY SECTION WHERE THE ADDRESS IS DISPLAYED!*
          Email: contact.aetherkraft@gmail.com
          WhatsApp: https://wa.me/923709315445
          Location: MUZAFFARABAD, KASHMIR
@@ -914,7 +1033,7 @@
               Initiate A <span class="text-fire-gradient">Project</span>
             </h2>
             <p class="section-subtext">
-              Have an upcoming website in mind? Reach out directly via WhatsApp or email to get a personalized proposal.
+              Have an upcoming website in mind? Reach out directly via WhatsApp, email, or send a direct transmission.
             </p>
 
             <!-- Prominent Glowing "Copy Email" Button from Prompt 1 -->
@@ -954,7 +1073,7 @@
               </div>
             </a>
 
-            <!-- Official Location Card -->
+            <!-- Official Location Card (Only place where address is shown!) -->
             <div class="channel-card highlight-loc">
               <div class="channel-icon-circle loc-icon">
                 <i class="fa-solid fa-location-dot"></i>
@@ -962,7 +1081,7 @@
               <div class="channel-info">
                 <span class="channel-label">Studio Coordinates</span>
                 <h4 class="channel-value">MUZAFFARABAD, KASHMIR</h4>
-                <span class="channel-hint">Operating globally</span>
+                <span class="channel-hint">Serving global clients</span>
               </div>
             </div>
 
@@ -991,9 +1110,9 @@
                 <div class="form-group">
                   <label for="client-budget">Project Scope / Budget</label>
                   <select id="client-budget" name="budget">
-                    <option value="500-1000">Starting from $500 – $1,000</option>
-                    <option value="1000-2500">$1,000 – $2,500 (Full-Featured)</option>
-                    <option value="2500+">$2,500+ (Enterprise / Complex)</option>
+                    <option value="499-1000">Starting from $499 – $1,000</option>
+                    <option value="1000-2500">$1,000 – $2,500 (Signature Studio)</option>
+                    <option value="2500+">$2,500+ (Full-Stack / Enterprise)</option>
                   </select>
                 </div>
                 <div class="form-group">
@@ -1004,7 +1123,7 @@
 
               <div class="form-group">
                 <label for="client-message">Project Goals &amp; Overview</label>
-                <textarea id="client-message" name="message" rows="4" placeholder="Tell us about the website you need, timeline, and any reference sites..." required></textarea>
+                <textarea id="client-message" name="message" rows="4" placeholder="Tell us about the website you need, timeline, and reference sites..." required></textarea>
               </div>
 
               <button type="submit" class="btn-fire-primary btn-submit-form">
@@ -1026,6 +1145,7 @@
 
   <!-- =========================================================================
        FOOTER
+       (NO address here, NO pricing in nav links!)
        ========================================================================= -->
   <footer class="site-footer">
     <div class="container footer-content">
@@ -1036,10 +1156,9 @@
             <span class="eclipse-ring"></span>
             <span class="eclipse-core"></span>
           </div>
-          <span class="brand-name">AETHER KRAFT</span>
+          <span class="brand-name">AETHERKRAFT</span>
         </a>
         <p class="footer-tagline-text">A DIGITAL STUDIO BY JAWAD</p>
-        <p class="footer-loc-text"><i class="fa-solid fa-location-dot"></i> MUZAFFARABAD, KASHMIR</p>
       </div>
 
       <div class="footer-links-col">
@@ -1047,9 +1166,10 @@
         <ul>
           <li><a href="#hero">Intro</a></li>
           <li><a href="#about-view">About Studio</a></li>
-          <li><a href="#odyssey">Visual Journey</a></li>
-          <li><a href="#services">Services &amp; Pricing ($500+)</a></li>
-          <li><a href="#portfolio">Selected Works</a></li>
+          <li><a href="#showcase">Visual Journey</a></li>
+          <li><a href="#projects">Selected Works</a></li>
+          <li><a href="#experience">Professional Journey</a></li>
+          <li><a href="#pricing">Pricing Packages</a></li>
           <li><a href="#contact">Contact &amp; WhatsApp</a></li>
         </ul>
       </div>
@@ -1077,7 +1197,7 @@
     <div class="footer-bottom-bar">
       <div class="container bottom-bar-inner">
         <p class="copyright-statement">
-          &copy; 2026 <strong>AETHER KRAFT</strong> &bull; A DIGITAL STUDIO BY JAWAD. ALL RIGHTS RESERVED.
+          &copy; 2026 <strong>AETHERKRAFT</strong> &bull; A DIGITAL STUDIO BY JAWAD. ALL RIGHTS RESERVED.
         </p>
         <a href="#hero" class="btn-back-to-top" aria-label="Return to top of page">
           <span>Back to Top</span>
@@ -1101,23 +1221,27 @@
         <div class="resume-sheet">
           <div class="resume-head">
             <h2>Jawad</h2>
-            <p class="resume-sub">Founder &amp; Creative Developer &bull; AETHER KRAFT</p>
-            <p class="resume-meta">Muzaffarabad, Kashmir &bull; contact.aetherkraft@gmail.com &bull; +92 370 9315445</p>
+            <p class="resume-sub">Founder &amp; Creative Developer &bull; AETHERKRAFT</p>
+            <p class="resume-meta">contact.aetherkraft@gmail.com &bull; +92 370 9315445</p>
           </div>
           <hr class="resume-divider">
           <div class="resume-block">
             <h4>Profile Summary</h4>
-            <p>Creative Frontend &amp; Full-Stack Developer specializing in customized website development. Proven track record in high-performance web applications, interactive animations, and responsive architectures.</p>
+            <p>Creative Frontend &amp; Full-Stack Developer specializing in customized website development. Proven track record in high-performance web applications, interactive animations, and responsive architectures with zero layout thrashing.</p>
           </div>
           <div class="resume-block">
             <h4>Technical Arsenal</h4>
-            <p><strong>Languages:</strong> HTML5, Modern CSS, JavaScript (ES6+), React.js, Tailwind CSS, REST APIs.</p>
-            <p><strong>Specializations:</strong> Performance Optimization (Core Web Vitals), Custom Motion, Mobile-First Ergonomics.</p>
+            <p><strong>Languages:</strong> HTML5, Modern CSS, JavaScript (ES6+), React.js, Next.js, Tailwind CSS, REST APIs.</p>
+            <p><strong>Specializations:</strong> Performance Optimization (Core Web Vitals), Custom Motion, Mobile-First Ergonomics, Canvas Scrubbing.</p>
           </div>
           <div class="resume-block">
             <h4>Education</h4>
-            <p><strong>ADS (B.Sc) Computer Science:</strong> Shah Abdul Latif University Khairpur (2025 – Present)</p>
-            <p><strong>Intermediate (Pre-Engineering):</strong> Govt Islamia Science College Sukkur (2023 – 2024)</p>
+            <p><strong>ADS (B.Sc) Computer Science:</strong> Shah Abdul Latif University Khairpur (2025 &ndash; Present)</p>
+            <p><strong>Intermediate (Pre-Engineering):</strong> Govt Islamia Science College Sukkur (2023 &ndash; 2024)</p>
+          </div>
+          <div class="resume-block">
+            <h4>Key Projects &amp; Capabilities</h4>
+            <p>Built and engineered bespoke web solutions, e-commerce storefronts, and interactive dashboards delivering 60+ FPS motion and 95+ Core Web Vitals mobile scores.</p>
           </div>
         </div>
       </div>
