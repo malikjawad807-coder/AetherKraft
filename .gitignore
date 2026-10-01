@@ -1,0 +1,12 @@
+# Large reference video
+Personal Portfolio Website.mp4
+
+# Node & Logs
+node_modules/
+*.log
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
